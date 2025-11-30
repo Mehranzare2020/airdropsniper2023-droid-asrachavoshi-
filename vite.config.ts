@@ -3,10 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // 'base' handles the path for assets. 
-  // './' is great for relative hosting (GitHub Pages), but on Vercel root '/' is often standard.
-  // We keep './' for compatibility but ensure outDir is correct.
-  base: './', 
+  base: '/', 
   build: {
     outDir: 'dist',
     sourcemap: false,
